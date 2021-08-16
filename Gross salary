@@ -1,0 +1,25 @@
+#include<stdio.h>
+int gross(int num)
+{
+    int val,hra;
+    if(num>0&&num<1550)
+   {
+       val=num*0.1;
+       
+       hra=num*0.8;
+       return val+hra+num;
+   }
+   else if(num>0&&num>=1550)
+   {
+       val=num*0.3;
+       hra=num*0.9;
+      return val+hra+num;
+   }
+}
+int main()
+{
+   int sal,val,hra,sum;
+   scanf("%d",&sal);
+   printf("%d",gross(sal));
+   
+}
